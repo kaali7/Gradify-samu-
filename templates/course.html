@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Links - Gradify</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Make logo circular */
+        .logo {
+          width: 40px;
+          /* Adjust size */
+          height: 40px;
+          /* Adjust size */
+          border-radius: 50%;
+          /* Make logo circular */
+          object-fit: cover;
+          /* Ensure the image maintains aspect ratio */
+        }
+    
+        /* Text styling */
+        .background h1 {
+          color: white;
+          /* Change text color to white for contrast */
+          font-size: 48px;
+          /* Adjust the size of the title */
+          text-align: center;
+          /* Center-align the text */
+          margin: 0;
+          /* Remove any default margin */
+        }
+    
+        /* Navigation Bar Adjustments */
+        .navbar-brand h1 {
+          font-size: 36px;
+          /* Adjust title font size */
+          text-align: left;
+          /* Align to the left */
+        }
+      </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Left side: Logo -->
+            <a class="navbar-brand" href="/">
+                <img src="https://images-platform.99static.com/8FQAtBlqlQHj74USbZmrAFLZKW0=/500x500/top/smart/99designs-contests-attachments/16/16498/attachment_16498083"
+                    alt="Logo" class="logo">
+                <!-- Middle: Web Name -->
+                <b><i><u>Gradify</u></i></b>
+            </a>
+
+            <!-- Collapsible Menu (About, Other Pages) -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cousres">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right side: Search Bar and Menu (Hamburger Icon) -->
+            <div class="d-flex align-items-center">
+                <!-- Search Bar -->
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <!-- Hamburger Menu (3 Lines) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Available Courses</h1>
+            <p class="lead">Explore our collection of web development courses</p>
+        </div>
+    </section>
+
+    <!-- Course List Section -->
+    <section class="container my-5">
+        <div class="row">
+            <!-- HTML Course -->
+            <div class="col-md-4 mb-4">
+                <div class="card" data-toggle="modal" data-target="#courseModal1">
+                    <img src="static/image/html.jpg" class="card-img-top" alt="HTML Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn HTML</h5>
+                        <p class="card-text">Understand the fundamentals of HTML and how to create basic web pages.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JavaScript Course -->
+            <div class="col-md-4 mb-4">
+                <div class="card" data-toggle="modal" data-target="#courseModal2">
+                    <img src="static/image/javascript.jpg" class="card-img-top" alt="JavaScript Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn JavaScript</h5>
+                        <p class="card-text">Master JavaScript, the language that powers interactive websites.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSS Course -->
+            <div class="col-md-4 mb-4">
+                <div class="card" data-toggle="modal" data-target="#courseModal3">
+                    <img src="static/image/css.jpg" class="card-img-top" alt="CSS Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn CSS</h5>
+                        <p class="card-text">Style your web pages with CSS and make them visually appealing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Python Course -->
+            <div class="col-md-4 mb-4">
+                <div class="card" data-toggle="modal" data-target="#courseModal4">
+                    <img src="static/image/python.jpg" class="card-img-top" alt="Python Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Python</h5>
+                        <p class="card-text">Get started with Python, one of the most versatile programming languages.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Git/GitHub Course -->
+            <div class="col-md-4 mb-4">
+                <div class="card" data-toggle="modal" data-target="#courseModal5">
+                    <img src="static/image/git_github.png" class="card-img-top" alt="Git and GitHub Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Git and GitHub</h5>
+                        <p class="card-text">Learn version control and how to use Git and GitHub to collaborate on
+                            projects.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C Language Course -->
+            <div class="col-md-4 mb-4">
+                <div class="card" data-toggle="modal" data-target="#courseModal6">
+                    <img src="static/image/c.jpg" class="card-img-top" alt="C Language Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn C Language</h5>
+                        <p class="card-text">Dive deep into C, a powerful programming language widely used in system
+                            programming.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- C++ Language Course -->
+            <div class="col-md-4 mb-4">
+                <div class="card" data-toggle="modal" data-target="#courseModal7">
+                    <img src="static/image/c++.jpg" class="card-img-top" alt="C++ Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn C++ Language</h5>
+                        <p class="card-text">Learn C++ and understand object-oriented programming principles.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Python Flask Course -->
+            <div class="col-md-4 mb-4">
+                <div class="card" data-toggle="modal" data-target="#courseModal8">
+                    <img src="static/image/flask_python.jpg" class="card-img-top" alt="Python Flask Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Learn Python Flask</h5>
+                        <p class="card-text">Build web applications with Python using the Flask framework.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Course Details -->
+
+    <!-- HTML Course Modal -->
+    <div class="modal fade" id="courseModal1" tabindex="-1" aria-labelledby="courseModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="courseModalLabel1">Learn HTML</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Course Details:</h6>
+                    <ul>
+                        <li><strong>Duration:</strong> 2-3 Days</li>
+                        <li><strong>Prerequisites:</strong> None</li>
+                    </ul>
+                    <h6>Instructor:</h6>
+                    <p>Apna College</p>
+                    <h6>One-Shot Video</h6>
+                </div>
+                <div class="modal-footer">
+                   <a href="https://youtu.be/ESnrn1kAD4E?si=nsTmzig3rt2te6Uy" class="btn btn-danger btn-lg mx-2 mb-2">Watch</a>
+                   <a href="/quiz/html" class="btn btn-info btn-lg mx-2 mb-2">Quiz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Course Modal -->
+    <div class="modal fade" id="courseModal2" tabindex="-1" aria-labelledby="courseModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="courseModalLabel2">Learn JavaScript</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Course Details:</h6>
+                    <ul>
+                        <li><strong>Duration:</strong> 2-3 Week</li>
+                        <li><strong>Prerequisites:</strong> Basic HTML knowledge</li>
+                    </ul>
+                    <h6>Instructor:</h6>
+                    <p>Apna College</p>
+                    <h6>One-Shot Video</h6>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://youtu.be/VlPiVmYuoqw?si=pwZamv92yfStvJL-" class="btn btn-danger btn-lg mx-2 mb-2">Watch</a>
+                    <a href="/quiz/javascript" class="btn btn-info btn-lg mx-2 mb-2">Quiz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CSS Course Modal -->
+    <div class="modal fade" id="courseModal3" tabindex="-1" aria-labelledby="courseModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="courseModalLabel3">Learn CSS</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Course Details:</h6>
+                    <ul>
+                        <li><strong>Duration:</strong> 1 Week</li>
+                        <li><strong>Prerequisites:</strong> Basic HTML knowledge</li>
+                    </ul>
+                    <h6>Instructor:</h6>
+                    <p>Apna College</p>
+                    <h6>One-Shot Video</h6>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://youtu.be/ESnrn1kAD4E?si=nsTmzig3rt2te6Uy" class="btn btn-danger btn-lg mx-2 mb-2">Watch</a>
+                    <a href="/quiz/css" class="btn btn-info btn-lg mx-2 mb-2">Quiz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Python Course Modal -->
+    <div class="modal fade" id="courseModal4" tabindex="-1" aria-labelledby="courseModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="courseModalLabel4">Learn Python</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Course Details:</h6>
+                    <ul>
+                        <li><strong>Duration:</strong> 2 Weeks</li>
+                        <li><strong>Prerequisites:</strong> None</li>
+                    </ul>
+                    <h6>Instructor:</h6>
+                    <p>Apna College</p>
+                    <h6>One-Shot Video</h6>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://youtu.be/vLqTf2b6GZw?si=hqM9yQWoUR5nt0A9" class="btn btn-danger btn-lg mx-2 mb-2">Watch</a>
+                    <a href="/quiz/python" class="btn btn-info btn-lg mx-2 mb-2">Quiz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Git/GitHub Course Modal -->
+    <div class="modal fade" id="courseModal5" tabindex="-1" aria-labelledby="courseModalLabel5" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="courseModalLabel5">Learn Git and GitHub</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Course Details:</h6>
+                    <ul>
+                        <li><strong>Duration:</strong> 1 Week</li>
+                        <li><strong>Prerequisites:</strong> Basic programming knowledge</li>
+                    </ul>
+                    <h6>Instructor:</h6>
+                    <p>Apna College</p>
+                    <h6>One-Shot Video</h6>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://youtu.be/Ez8F0nW6S-w?si=m4kj5ENrycIGeOy_" class="btn btn-danger btn-lg mx-2 mb-2">Watch</a>
+                    <a href="/quiz/git" class="btn btn-info btn-lg mx-2 mb-2">Quiz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- C Language Course Modal -->
+    <div class="modal fade" id="courseModal6" tabindex="-1" aria-labelledby="courseModalLabel6" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="courseModalLabel6">Learn C Language</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Course Details:</h6>
+                    <ul>
+                        <li><strong>Duration:</strong> 1-2 Weeks</li>
+                        <li><strong>Prerequisites:</strong> None</li>
+                    </ul>
+                    <h6>Instructor:</h6>
+                    <p>Apna College</p>
+                    <h6>One-Shot Video</h6>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://youtu.be/irqbmMNs2Bo?si=QVSC4RZlo_66rIQN" class="btn btn-danger btn-lg mx-2 mb-2">Watch</a>
+                    <a href="/quiz/c" class="btn btn-info btn-lg mx-2 mb-2">Quiz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- C++ Language Course Modal -->
+    <div class="modal fade" id="courseModal7" tabindex="-1" aria-labelledby="courseModalLabel7" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="courseModalLabel7">Learn C++ Language</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Course Details:</h6>
+                    <ul>
+                        <li><strong>Duration:</strong> 2-3 Weeks</li>
+                        <li><strong>Prerequisites:</strong> Basic programming knowledge</li>
+                    </ul>
+                    <h6>Instructor:</h6>
+                    <p>Apna College</p>
+                    <h6>One-Shot Video</h6>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://youtu.be/yGB9jhsEsr8?si=f6z9j6guW4tiDKof" class="btn btn-danger btn-lg mx-2 mb-2">Watch</a>
+                    <a href="/quiz/cpp" class="btn btn-info btn-lg mx-2 mb-2">Quiz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Python Flask Course Modal -->
+    <div class="modal fade" id="courseModal8" tabindex="-1" aria-labelledby="courseModalLabel8" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="courseModalLabel8">Learn Python Flask</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Course Details:</h6>
+                    <ul>
+                        <li><strong>Duration:</strong> 2-3 Weeks</li>
+                        <li><strong>Prerequisites:</strong> Basic Python knowledge</li>
+                    </ul>
+                    <h6>Instructor:</h6>
+                    <p>Code with Harry</p>
+                    <h6>One-Shot Video</h6>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://youtu.be/oA8brF3w5XQ?si=awhEtldhnEItilDE" class="btn btn-danger btn-lg mx-2 mb-2">Watch</a>
+                    <a href="/quiz/flask" class="btn btn-info btn-lg mx-2 mb-2">Quiz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
